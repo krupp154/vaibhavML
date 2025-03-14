@@ -17,9 +17,9 @@ st.write(f"Files in directory: `{os.listdir()}`")
 
 # Define paths (update these if needed)
 model_path = 'src/models/best_wine_quality_model.joblib'
-scaler_path = 'src/models/scaler.joblib'
-data_path = 'data/winequality.csv'  # Update if dataset is inside the 'data' folder
-
+model_path = '/mount/src/vaibhavml/model/best_wine_quality_model.joblib'
+scaler_path = '/mount/src/vaibhavml/model/scaler.joblib'
+data_path = '/mount/src/vaibhavml/data/winequality.csv'
 
 # Check if files exist (with absolute paths)
 st.write("#### File Path Checks")
