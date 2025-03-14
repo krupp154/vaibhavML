@@ -44,13 +44,16 @@ except Exception as e:
     st.stop()
 
 # Load dataset
+# Load dataset
 try:
     df = pd.read_csv(data_path)
     st.write(f"✅ Dataset `{data_path}` loaded successfully!")
+    st.write("### Dataset Preview")
+    st.write(df.head())  # Debug: Display the first few rows of the dataset
 except Exception as e:
     st.error(f"❌ Error loading dataset: {e}")
     st.stop()
-
+    
 # Feature alignment check
 if hasattr(scaler, 'feature_names_in_'):
     required_features = list(scaler.feature_names_in_)
