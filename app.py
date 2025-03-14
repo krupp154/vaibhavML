@@ -18,7 +18,7 @@ st.write(f"Files in directory: `{os.listdir()}`")
 # Define paths (update these if needed)
 model_path = 'models/best_wine_quality_model.joblib'
 scaler_path = 'models/scaler.joblib'
-data_path = 'models/winequality.csv'
+data_path = 'data/winequality.csv'
 
 # Check if files exist (with absolute paths)
 st.write("#### File Path Checks")
